@@ -1,0 +1,9 @@
+import random
+
+# Crear lista con 10 números al azar entre 1 y 10
+numeros = [random.randint(1, 10) for _ in range(10)]
+
+# Mostrar cada número con su cuadrado y cubo
+print("Número  Cuadrado  Cubo")
+for n in numeros:
+    print(f"{n:^7} {n*n:^9} {n*n*n:^5}")
