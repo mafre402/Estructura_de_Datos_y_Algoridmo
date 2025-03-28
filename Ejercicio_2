@@ -1,0 +1,22 @@
+# PASO 1: Crear una lista vacía para guardar las palabras
+palabras = []
+
+print("Vamos a guardar 5 palabras diferentes")
+
+# PASO 2: Pedir las palabras al usuario
+for i in range(5):
+    palabra = input(f"Ingresa la palabra número {i+1}: ")
+    palabras.append(palabra)  # Guardar cada palabra en la lista
+
+# PASO 3: Crear otra lista con las palabras al revés
+palabras_invertidas = []
+# Recorremos la lista original desde el final hacia el principio
+for i in range(4, -1, -1):  # 4 es la última posición, vamos restando 1
+    palabras_invertidas.append(palabras[i])
+
+# PASO 4: Mostrar los resultados
+print("\nLas palabras que ingresaste son:")
+print(palabras)
+
+print("\nLas palabras en orden inverso son:")
+print(palabras_invertidas)
